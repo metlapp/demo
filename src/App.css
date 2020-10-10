@@ -1,0 +1,104 @@
+.flexBoxRow, .flexBoxCol {
+  display: flex;
+}
+.flexBoxRow {
+  flex-direction: row;
+}
+.flexBoxCol {
+  flex-direction: column;
+  /*border: 1px solid red;*/
+}
+.flexBoxRow > *, .flexBoxCol > * {
+  flex-grow: 1;
+}
+.flexGrow0 {
+  flex-grow: 0;
+}
+
+/*****************************************************************************/
+
+.App {
+  color: white;
+}
+
+#background {
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+  background-color: #555;;
+}
+
+.background-overlay {
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5) ;
+}
+
+.App-logo {
+  height: 50px;
+  pointer-events: none;
+  padding:  10px;
+  margin: 5px;
+  /*background-color: rgba(0, 0, 0, 0.3) ;*/
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header > * {
+  float: left;
+  text-align: center;
+}
+
+.App-header > *:last-child {
+  float: right;
+}
+
+.header-link, .header-link:active, .header-link:hover, .header-link:visited {
+  color: white;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+}
+.header-link > svg {
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+.header-link > div {
+  font-size: 14px;
+  margin-top: -11px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+}
+
+.cancelBtn {
+  background-color: #999999;
+}
+
+.makeStyles-mainTodoInput-17 .MuiIconButton-root {
+  padding: 0 !important;
+}

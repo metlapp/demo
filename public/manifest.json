@@ -1,0 +1,15 @@
+
+{
+  "manifest_version": 2,
+  "name": "Community Dashboard",
+  "author": "Katie McGoff",
+  "version": "1.0.1",
+  "description": "Community Dashboard provided by Metl Solutions Inc.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+    "icons": {
+      "128": "icons/icon-128.png"
+    },
+  "permissions": ["storage"]
+}
